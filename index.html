@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" >
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-  <title>Original file</title>
+  <title>Restaurant</title>
 </head>
 <body>
   <!--Section: HEADER-->
@@ -30,7 +30,7 @@
         Welcome to <span>Restaurant,</span> where Flavor Lives!
       </h1>
       <div class="section-home-buttons">
-        <button class="home-button" id="primary-button"><span>Contact Us</span></button>
+        <a href="#contact"> <button class="home-button" id="primary-button"><span>Contact Us</span></button></a>
         <button class="home-button" id="light-button"><span>Explore</span></button>
       </div>
     </div>
@@ -166,7 +166,7 @@
 
     ScrollReveal().reveal(".section-title", {
       delay: 555,
-      duration: 1800,
+      duration: 1500,
       origin: "top",
     });
 
@@ -183,8 +183,23 @@
     ScrollReveal().reveal(".section-desc", {
       delay: 900,
       interval: 300,
-      origin: "bottom"
+      origin: "top"
     });
   </script>
+  <!--FOOTER-->
+  <footer class="footer">
+    <h1 class="footer__title">Resta<span>urant</span></h1>
+    <ul class="footer__menu">
+      <li class="footer-menu"><a href="#home" class="">Home</a></li>
+      <li class="footer-menu"><a href="#menu" class="">Menu</a></li>
+      <li class="footer-menu"><a href="#about" class="">About</a></li>
+      <li class="footer-menu"><a href="#services" class="">Services</a></li>
+      <li class="footer-menu"><a href="#contact" class="">Contact</a></li>
+    </ul>
+    <div class="footer__divider"></div>
+    <p class="footer__copyright">
+      &copy; 2025 Restaurant. All rights reserved. | Crafted by Team A
+    </p>
+  </footer>
 </body>
 </html>
